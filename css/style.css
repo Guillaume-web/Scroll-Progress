@@ -1,0 +1,69 @@
+/***** Reset *****/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  min-height: 300vh;
+  color: white;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+/***** End Reset *****/
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  animation: slide auto linear;
+  animation-timeline: scroll();
+}
+
+@keyframes slide {
+  0% {
+    translate: 0;
+  }
+  100% {
+    translate: calc(-100% - 100vw);
+  }
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 100vh;
+  padding: 1em clamp(1rem, 2vw, 4vw);
+  backdrop-filter: grayscale(60%);
+}
+
+figure {
+  flex: 0 0 100vw;
+}
+
+img {
+  height: 100%;
+  object-fit: cover;
+}
