@@ -3,6 +3,10 @@
 ## Overview
 This project is a demonstration of a unique web page where images move horizontally as the user scrolls vertically. It's a visually engaging way to navigate through content.
 
+<p align="center">
+  <img src="assets/scrollProgress.gif" alt="scrollProgress"/>
+</p>
+
 ## Features
 - Horizontal image movement on vertical scrolling
 - Responsive design ensuring compatibility across various devices
